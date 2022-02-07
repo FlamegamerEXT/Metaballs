@@ -5,6 +5,7 @@ ArrayList<Ball> balls = new ArrayList<Ball>();
 void setup(){
   size(960, 600);
   noStroke();
+  fill(231, 120, 65);  // Colour: Atomic Tangerine
   for (int i = 0; i < 12; i++){
     float x = width*(random(0.6)+0.2), y = height*(random(0.6)+0.2);
     float v = 1.5+random(0.5), r = 30+random(15);
@@ -14,7 +15,6 @@ void setup(){
 
 void draw(){
   clear();
-  fill(55, 55, 200);
   
   // Move all the balls forward one step
   for (Ball b : balls){ b.step(); }
